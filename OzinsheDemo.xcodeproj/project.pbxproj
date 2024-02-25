@@ -16,6 +16,9 @@
 		D79FE2612B7F1DC50057DD7B /* OzinsheDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79FE2602B7F1DC50057DD7B /* OzinsheDemoTests.swift */; };
 		D79FE26B2B7F1DC50057DD7B /* OzinsheDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79FE26A2B7F1DC50057DD7B /* OzinsheDemoUITests.swift */; };
 		D79FE26D2B7F1DC50057DD7B /* OzinsheDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79FE26C2B7F1DC50057DD7B /* OzinsheDemoUITestsLaunchTests.swift */; };
+		D79FE27E2B7F2B750057DD7B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79FE27D2B7F2B750057DD7B /* TabBarController.swift */; };
+		D7A440B02B8B31720068E099 /* FavoriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A440AF2B8B31720068E099 /* FavoriteTableViewController.swift */; };
+		D7A440B42B8B325B0068E099 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A440B32B8B325B0068E099 /* MovieTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		D79FE2662B7F1DC50057DD7B /* OzinsheDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OzinsheDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D79FE26A2B7F1DC50057DD7B /* OzinsheDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OzinsheDemoUITests.swift; sourceTree = "<group>"; };
 		D79FE26C2B7F1DC50057DD7B /* OzinsheDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OzinsheDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D79FE27D2B7F2B750057DD7B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		D7A440AF2B8B31720068E099 /* FavoriteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewController.swift; sourceTree = "<group>"; };
+		D7A440B32B8B325B0068E099 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +107,7 @@
 			children = (
 				D79FE2492B7F1DC40057DD7B /* AppDelegate.swift */,
 				D79FE24B2B7F1DC40057DD7B /* SceneDelegate.swift */,
-				D79FE24D2B7F1DC40057DD7B /* ViewController.swift */,
+				D7A440AE2B8B31210068E099 /* Controllers */,
 				D79FE24F2B7F1DC40057DD7B /* Main.storyboard */,
 				D79FE2522B7F1DC50057DD7B /* Assets.xcassets */,
 				D79FE2542B7F1DC50057DD7B /* LaunchScreen.storyboard */,
@@ -125,6 +131,17 @@
 				D79FE26C2B7F1DC50057DD7B /* OzinsheDemoUITestsLaunchTests.swift */,
 			);
 			path = OzinsheDemoUITests;
+			sourceTree = "<group>";
+		};
+		D7A440AE2B8B31210068E099 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D79FE24D2B7F1DC40057DD7B /* ViewController.swift */,
+				D79FE27D2B7F2B750057DD7B /* TabBarController.swift */,
+				D7A440AF2B8B31720068E099 /* FavoriteTableViewController.swift */,
+				D7A440B32B8B325B0068E099 /* MovieTableViewCell.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,7 +208,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					D79FE2452B7F1DC40057DD7B = {
 						CreatedOnToolsVersion = 14.2;
@@ -258,7 +275,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7A440B02B8B31720068E099 /* FavoriteTableViewController.swift in Sources */,
 				D79FE24E2B7F1DC40057DD7B /* ViewController.swift in Sources */,
+				D7A440B42B8B325B0068E099 /* MovieTableViewCell.swift in Sources */,
+				D79FE27E2B7F2B750057DD7B /* TabBarController.swift in Sources */,
 				D79FE24A2B7F1DC40057DD7B /* AppDelegate.swift in Sources */,
 				D79FE24C2B7F1DC40057DD7B /* SceneDelegate.swift in Sources */,
 			);
@@ -352,6 +372,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -412,6 +433,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
